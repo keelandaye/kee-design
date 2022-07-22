@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 
 import './button.css';
 
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-    const mode = primary ? 'kee-button--primary' : 'kee-button--secondary';
+export const Button = ({ variant, backgroundColor, size, label, ...props }) => {
     return (
         <button
             type="button"
-            className={['kee-button', `kee-button--${size}`, mode].join(' ')}
+            className={['kee-button', `kee-button--${size}`, `kee-button--${variant}`].join(' ')}
             style={backgroundColor && { backgroundColor }}
             {...props}
         >
@@ -18,16 +17,18 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 }
 
 Button.propTypes = {
-    primary: PropTypes.bool,
+    primary: PropTypes.oneOf(['primary', 'secondary', 'warning']),
     backgroundColor: PropTypes.string,
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     label: PropTypes.string.isRequired,
     onClick: PropTypes.func,
-}
+    disabled: PropTypes.bool,
+};
 
 Button.defaultProps = {
     backgroundColor: null,
-    primary: false,
+    variant: 'primary',
     size: 'medium',
     onClick: undefined,
-}
+    disabled: false,
+};
