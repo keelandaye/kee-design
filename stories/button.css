@@ -33,3 +33,23 @@
   font-size: 17.5px;
   padding: 12.5px 37.5px;
 }
+
+.kee-button:disabled {
+    opacity: 60%;
+    cursor: not-allowed;
+}
+
+.kee-button--success {
+    color: black;
+    background-color: #b4e8a7;
+}
+
+.kee-button--warning {
+    color: black;
+    background-color: #edd48a;
+}
+
+.kee-button--danger {
+    color: white;
+    background-color: #910101;
+}
