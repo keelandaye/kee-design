@@ -1,35 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h3 align="center">Welcome to kee-design</h3>
 
-## Getting Started
+<p align="center">kee-design is a simple, lightweight <a href="https://reactjs.org/" target="_blank">React</a> UI component library.</p>
 
-First, run the development server:
+<div align="center">
+<img src="https://img.shields.io/badge/build-passing-informational?style=for-the-badge&logo=GitHub&color=181717" />
+<img src="https://img.shields.io/badge/Node.js-v16.16.0-informational?style=for-the-badge&logo=Node.js&color=339933" />
+<img src="https://img.shields.io/badge/React-v18.2.0-informational?style=for-the-badge&logo=React&color=61DAFB" />
+<img src="https://img.shields.io/badge/npm-v8.11.0-informational?style=for-the-badge&logo=npm&color=CB3837" />
+<img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" />
+</div>
+
+## Installation
+
+Install package from NPM or Yarn.
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm install kee-design
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+yarn add kee-design
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This package uses the Nunito font, available here:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```html
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+  rel="stylesheet"
+/>
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Development
 
-## Learn More
+Clone locally:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git clone git@github.com:keelandaye/kee-design.git
+cd kee-design/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Install dependencies and run Storybook server with NPM:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm install
+npm run storybook
+```
 
-## Deploy on Vercel
+Or with Yarn:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn
+yarn storybook
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# kee-design" 
+## License
+
+kee-design is licensed under the [MIT License](LICENSE)
